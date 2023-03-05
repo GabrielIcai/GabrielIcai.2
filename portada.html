@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/musicworldd.com/portada?callback=cb"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css" type="text/css"/>
+</head>
+
+<body>
+  <script src="Portada.js"></script>
+    <nav>
+			<ul class="navegacion" >
+        <li>
+          <a href=portada.html><img src = MUSICHOUSE.jpg  width="170" height="60" ></a>
+        </li>
+				<li><a href="MusicChart.html"> MUSIC CHART</a></li>
+				<li><a href="djchart.html">DJ Chart</a></li>
+				<li><a href="AboutUs.html">ABOUT US</a></li>
+        <li><a href="clicks.html">CLICKS</a></li>
+        <li><div class="search"> 
+          <form>
+              <input type="text" placeholder="Buscar">
+          </form></li>
+        </div></ul>
+      </nav> 
+      <h1>Visits:<span id="visits"></span></h1>
+   <div class="container">
+    <a href="djchart.html"><div class=imagen1><img src = https://wololosound.com/wp-content/uploads/MARTIN-GARRIX-FB-BANNER.jpg width="820" height="300" ></a>
+    </div>
+    <div class=imagen4><img src = https://geo-media.beatport.com/image_size/920x642/a97c56e7-8b0e-467a-83ee-0bd058544bc0.jpg width="400" height="205" >
+    </div>
+    <div class=imagen2><img src = https://midnightdancemusic.com/wp-content/uploads/2022/12/album-forever-now-portada.webp width="205" height="205" >
+    </div>
+    <div class=imagen3><img src = https://geo-media.beatport.com/image_size/1400x1400/1a66ce2c-3cd6-4f09-a130-0a2e8629ae7e.jpg width="205" height="205" > </div>
+    <a href="MusicChart.html"><div class=imagentabla><img src = tabla.png  width="400" height="1100" ></a>
+    </div>
+    <div class=fred><img src = https://i.ytimg.com/vi/gVBcX1Sd228/maxresdefault.jpg width="390" height="190" >
+    </div>
+    <div class=miami><img src =https://umfworldwide.com/wp-content/uploads/2022/10/2023-phase-1-thumb.png width="390" height="190" >
+    </div>
+    <div class=kygo><img src =http://www.guaumiauymas.com/guaumiauymaskygogoldenhourfestivalcartel.jpg width="390" height="400" >
+    </div>
+    <div class=tomorowland><img src =https://www.dodmagazine.es/wp-content/uploads/2020/11/tomorrowland-noche-vieja-2020.jpg width="390" height="400" >
+    </div>
+    <h2>EVENTS</h2>
+    <h3> SONG OF THE WEEK</h3>
+      <div class=audio>
+      <audio controls>
+      <source  src="AVAION - Pieces.mp3"></audio>
+      </div>
+      <div class=pieces><img src =https://i.scdn.co/image/ab67616d0000b2734f205c7786a248e23179f7f7 width="200" height="200" >
+      </div>
+      <h4> PLUGIN BOUTIQUE</h4>
+      <div class=tienda><img src =https://geo-pro.beatport.com/static/1a63708ae999af7b0198c4fcb4dee938.png width="1100" height="360" >
+      </div>
+    </div>
+    <div id="visit-counter"></div>
+    </body>
+    

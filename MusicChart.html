@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/musicworldd.com/musichart?callback=cb"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="musicchart.css" type="text/css"/>
+</head>
+
+
+<body>
+  <script src="musicchart.js"></script>
+    <nav>
+       <ul class="navegacion">
+           <li>
+           <a href=portada.html><img src = MUSICHOUSE.jpg  width="170" height="60" ></a>
+           </li>
+           <li><a href="MusicChart.html"> MUSIC CHART</a></li>
+           <li><a href="djchart.html">DJ Chart</a></li>
+           <li><a href="AboutUs.html">ABOUT US</a></li>
+           <li><a href="clicks.html">CLICKS</a></li>
+           <li><div class="search"> 
+             <form>
+           <input type="text" placeholder="Buscar">
+           </form></li>
+           </div></ul>
+           </nav>
+           <h1>Visits:<span id="visits"></span></h1>
+           
+        <header>TOP 5 OF THE WEEK</header>
+        <table>
+            <tbody>
+              <tr>
+                <td class="numero"> 1 </td>
+                <div class="titulo"></div><td> When We're Gone- Mesto, Justin Mylo </td></div>
+                <td><img src=https://images.genius.com/0f573d67073279e222635dd4c6f3a350.640x640x1.jpg width="200" height="200"></td>
+                <td> <div class=audio>
+                    <audio controls>
+                    <source  src="mesto.mp3"></audio>
+                    </div></td>
+              </tr>
+              <tr>
+                <td class="numero"> 2 </td>
+                <div class="'titulo"></div><td> Cocoon (Martin Garrix Remix) </td></div>
+                <td><img src=https://geo-media.beatport.com/image_size/500x500/71dbc8c0-56ed-47ff-a4e2-eaaee0482ae6.jpg width="200" height="200"></td>
+                <td> <div class=audio>
+                    <audio controls>
+                    <source  src="cocoon.mp3"></audio>
+                    </div></td>
+              </tr>
+              <tr>
+                <td class="numero"> 3 </td>
+                <div class="'titulo"></div><td> Survive- Don Diablo </td></div>
+                <td><img src=https://i.scdn.co/image/ab67616d0000b273eb2dfa56c68c480b11285593 width="200" height="200"></td>
+                <td> <div class=audio>
+                    <audio controls>
+                    <source  src="survive.mp3"></audio>
+                    </div></td>
+              </tr>
+              <tr>
+                <td class="numero"> 4 </td>
+                <div class="'titulo"></div><td>Hope- Avaion </td></div>
+                <td><img src=https://cdn.smehost.net/sonymusices-45pressprod/wp-content/uploads/2022/10/3d9c956f-1f6b-4f20-a466-0cd0f31d4c42.jpg width="200" height="195"></td>
+                <td> <div class=audio>
+                    <audio controls>
+                    <source  src="AVAION - Hope.mp3"></audio>
+                    </div></td>
+              </tr>
+              <tr>
+                <td class="numero"> 5 </td>
+                <div class="'titulo"></div><td>Here for You- KYGO </td></div>
+                <td><img src=https://upload.wikimedia.org/wikipedia/en/f/f6/Here_For_You_single_cover_by_Kygo_and_Ella_Henderson.jpg width="200" height="200"></td>
+                <td> <div class=audio>
+                    <audio controls>
+                    <source  src="Here.mp3"></audio>
+                    </div></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="footer">
+            <img src = MUSICHOUSE.jpg  width="170" height="60" >
+              </div>
+        </body>

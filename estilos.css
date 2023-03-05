@@ -1,0 +1,181 @@
+body{background-color: #000000;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font: 10px sans-serif;
+}
+.container{ display: grid;
+  grid-template-columns: 200px 200px 190px 190px 35px 300px ; 
+  grid-template-rows:  10px 320px 210px 35px 190px 400px 70px 200px 1fr 300px 1fr;
+  grid-template-areas: 
+  "visitas visitas visitas visitas visitas visitas" 
+  "foto1 foto1 foto1 foto1 a list " 
+  "foto2 foto3 foto7 foto7 a list "
+  "eventos eventos eventos eventos a list "
+  "foto5 foto5 foto6 foto6 a list " 
+  "foto10 foto10 foto11 foto11 a list "
+  "sow sow sow sow a list " 
+  "cancion3 cancion3 cancion cancion a list "
+  "plugin plugin plugin plugin plugin plugin "
+  "tienda tienda tienda tienda tienda tienda " ;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  font: 10px sans-serif;
+
+}
+h1{
+  grid-area:visitas;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  font: 20px Roboto;
+
+}
+.navegacion {
+display: flex;
+justify-content:center;
+list-style: none;
+margin-bottom:30px;
+margin-top:20px;
+text-align: right;
+background: rgb(0, 0, 0);
+padding: 10px;
+}
+
+
+.navegacion li {
+  grid-area: "navegacion";
+  flex: 0 1 0;
+  margin-right: 90px;
+}
+
+.navegacion a {
+  font: 20px Roboto;
+  text-align:left ;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  user-select: none;
+}
+
+.navegacion a:hover {
+  text-decoration: underline;
+}
+
+.search input {
+  border: none;
+  background-color: #1f2023;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.user a:hover {
+  text-decoration: underline;
+}
+
+.imagen1 {
+  background: rgb(21, 20, 20);
+  grid-area: foto1;
+  text-align:  center;
+}
+
+.imagen4 {
+  background: rgb(9, 9, 9);
+  grid-area: foto7;
+  text-align: center;
+}
+.imagen2 {
+  background: rgb(2, 2, 2);
+  grid-area: foto2;
+}
+.imagen3 {
+  background: rgb(0, 0, 0);
+  grid-area: foto3;
+}
+.imagentabla {
+  background: rgb(0, 0, 0);
+  grid-area: list;
+}
+
+.fred {
+  background: rgb(0, 0, 0);
+  grid-area: foto5;
+}
+.miami {
+  background: rgb(0, 0, 0);
+  grid-area: foto6;
+}
+.kygo {
+  background: rgb(0, 0, 0);
+  grid-area: foto10;
+}
+.tomorowland {
+  background: rgb(0, 0, 0);
+  grid-area: foto11;
+}
+h2{
+  grid-area: eventos;
+  color: #ffffff;
+  text-align: left;
+  font: 20px Roboto;
+}
+h3{
+  grid-area: sow;
+  color: #fff;
+  text-align: left;
+  font: 20px Roboto;
+}
+.pieces{
+  background: rgb(0, 0, 0);
+  grid-area: cancion3;
+}
+.audio{
+  grid-area: cancion;
+  width: 310px;
+  height: 100px;
+  border: 10px solid #000000;
+  border-radius: 5px;
+  margin: 10px;
+}
+.audio::-webkit-media-controls-panel {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.audio::-webkit-media-controls-play-button {
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+}
+
+h4{grid-area: plugin;
+  color: #fff;
+  text-align: center;
+  font: 40px Roboto;
+}
+
+.tienda{
+  grid-area: tienda;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top:20px;
+  width: 100%;
+  height:80px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
